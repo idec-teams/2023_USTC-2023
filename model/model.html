@@ -1,0 +1,1654 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>USTC-model</title>
+
+    <style type="text/css">
+        html {
+            overflow-x: hidden;
+        }
+    </style>
+    <link rel="Bookmark" href="../src/none.png" />
+    <link rel="shortcut icon" href="../src/none.png" type="image/x-icon" />
+    <link rel="icon" href="../src/none.png" type="image/x-icon" />
+
+    <link href="../css/themify-icons.css" type="text/css" rel="stylesheet" />
+    <link href="../css/sidebar.css" type="text/css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+    <style type="text/css">
+        .test_div {
+            height: auto;
+            width: 100%;
+            flex-direction: column;
+
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+
+            display: flex;
+        }
+    </style>
+
+<div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+    <div class="nano">
+        <div class="nano-content">
+            <div class="logo">
+                <!-- <img src="assets/images/logo.png" alt="" /> -->
+                <a href="../index.html">
+                    <!-- <img src="assets/images/logo.png" alt="" /> --></br>
+                    <span href="../index.html" style="font-size:32px">USTC 2023</span>
+                </a>
+            </div>
+            <ul>
+                <li class="label" style="font-size:16px">Nav-bar</li>
+
+                <li>
+                    <a class="sidebar-sub-toggle"style="font-size:19px">
+                        <i class="ti-user"></i> Team
+                        <span class="sidebar-collapse-icon ti-angle-down"></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="../team/members.html" style="font-size: 17px;">Members</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="sidebar-sub-toggle"style="font-size:19px">
+                        <i class="ti-calendar"></i>Project
+                        <span class="sidebar-collapse-icon ti-angle-down"></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="../project/introduction.html" style="font-size:17px">Introduction</a>
+                        </li>
+
+                        <li>
+                            <a href="../project/description.html" style="font-size:17px">Description</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../project/design.html" style="font-size:17px">Design</a>
+                        </li>
+                        <li>
+                            <a href="../project/results.html" style="font-size:17px">Results</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../project/future.html" style="font-size:17px">Future</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="sidebar-sub-toggle"style="font-size:19px">
+                        <i class="ti-calendar"></i>Documentation
+                        <span class="sidebar-collapse-icon ti-angle-down"></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="../documentation/notebook.html" style="font-size: 17px;">Notebook</a>
+                        </li>
+                        <li>
+                            <a href="../documentation/protocol.html" style="font-size: 17px;">Protocol</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../hp/collaboration.html"style="font-size:19px">
+                        <i class="ti-heart"></i> Collaboration</a>
+                </li>
+
+                <li>
+                    <a class="sidebar-sub-toggle"style="font-size:19px">
+                        <i class="ti-view-list-alt"></i> Model
+
+                        <span class="sidebar-collapse-icon ti-angle-down"></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="../model/model.html" style="font-size:17px">Model</a>
+                        </li>
+                        
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="../safety/safety.html" style="font-size:19px">
+                        <i class="ti-home"></i>Safety
+                        <span class="sidebar-collapse-icon ti-angle-down"></span>
+                    </a>
+                    
+                </li>
+                <!--<li>
+                    <a href="parts/parts.html">
+                        <i class="ti-layout-grid4-alt"></i> 元件</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="header" style="position: fixed; top: 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <section id="main-content">
+
+                    <div class="row">
+                        <div class="test_div">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-content dib">
+                                            <h1 style="color: #002752;">Model
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="test_div">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-content dib">
+                                            <h2 style="color: #002752;">Overview</h2>
+                                            </br>
+                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                To provide strategies for optimizing experimental results and to further verify the feasibility of the experimental design, we use the model as a prediction. In this project, the model we designed is divided into Theoretical calculation, optimal enzyme ratio and diffusion simulation.
+                                            </div>
+                                           
+                                            <!--<div>
+                                                <center>
+                                                    <table width="600" border="1">
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>名称</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>引物</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>模板</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>酶</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>适配体</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Tau 蛋白</center>
+                                                                </b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>符号</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>P</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>X</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>E</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>apt</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>tau</center>
+                                                                </b></td>
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </div>-->
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="test_div">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-content dib">
+                                            <div class="stat-text"></div>
+                                            <h2 style="color: #002752;">Theoretical calculation</h2>
+                                            </br>
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We calculated the feasibility of the reaction by using the Gaussian16 computer program: We used the opt freq work type for the measurements, The Gibbs free energy prediction of H2 reduction to N-Boc-3-pyrrolidinone was performed using b3lyp functional, 6-31g (d) as base groups (other keywords: scrf= (solvent = 10 water) geom=connectivity), The reducing reaction Gibbs free energy of the R and S configurations is equal to + 7.157 kJ/mol, respectively, +3.970 kJ/mol, The corresponding redox potential is -0.037 V, -0.021 V, Referring to the redox potential of NADPH at-0.32V, We believe that the reaction is thermodynamically feasible.
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="test_div">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-content dib">
+                                            <div class="stat-text"></div>
+                                            <h2 style="color: #002752;">Optimal enzyme ratio</h2>
+                                            </br>
+                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We hope that the modeling calculations will lead to the optimal feeding ratio to balance the equilibrium between the two enzymatic reactions.
+                                            </div>
+                                            <div class="stat-digit"><b>Table. 1. Symbol Description</b>
+                                            </div>
+                                            <div>
+                                                <center>
+                                                    <table width="600" border="1">
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Species names</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>N-Boc-3-pyrrolidinone</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>N-boc-3-pyrrolidinol</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Glucose</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Gluconolactone</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>TbsADH</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>GDH</center>
+                                                                </b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Symbol used</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>S<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>P<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>S<sub>2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>P<sub>2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>E<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>E<sub>2</sub></center>
+                                                                </b></td>
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </div>
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction1:(E<sub>1</sub>)S<sub>1</sub>+NADPH +H<sup>+</sup>⟺ P<sub>1</sub>+ NADP<sup>+</sup>
+                                            </div>
+
+                                            <div>
+                                                <center><img
+                                                        src="../src/mo-1.png"
+                                                        width="208" height="108" /></center>
+                                            </div>
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction2:(E<sub>2</sub>)S<sub>2</sub>+NADP<sup>+</sup>⟹ P<sub>2</sub>+NADPH +H<sup>+</sup> 
+                                            </div>
+                                            <div>
+                                                <center><img
+                                                        src="../src/mo-2.png"
+                                                        width="199" height="95" /></center>
+                                            </div>
+
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is not advisable to assume that the enzyme consumes the substrate and the cofactor at equal rates. In order for the two reactions to be balanced, the net consumption of NADPH should be 0, which means:
+                                            </div>
+
+                                            <div>
+                                                <center><img
+                                                        src="../src/mo-3.png"
+                                                        width="112" height="45" /></center>
+                                            </div>
+
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parameter is listed in the following table. <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table. 2 Parameter Selection
+                                            </div>
+                                            <div>
+                                                <center>
+                                                    <table width="600" border="1">
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Parameter</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Value</center>
+                                                                </b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>m1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>0.06±0.006 mM</center>
+                                                                </b></td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>m2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>0.216±0.007 mM</center>
+                                                                </b></td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>1.309±0.80 s<sup>-1</sup></center>
+                                                                </b></td>
+                                                            
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>8.12±0.56 s<sup>-1</sup></center>
+                                                                </b></td>
+                                                            
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </div>
+                                            <br>
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bringing in the parameters and substrate concentrations we can find:
+                                            </div>
+
+                                            <center>
+                                                <img src="../src/mo-4.png"
+                                                    width="125" height="105" />
+                                                
+                                            </center>
+
+                                           
+
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the results the usage (mol) of the two enzymes is different. Considering the molecular weight of the two enzymes is about 2:1, the ratio should be about 1:8 (g).
+                                            </div>
+
+                                            
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, the above calculation is based on the fact that both enzymes are at their optimal temperatures. The activity of GDH is lower at higher temperatures while the activity of TbsADH is higher. Therefore, the effect of temperature on the activity of both enzymes needs to be considered for industrial applications to reconcile the balance between the reactions.
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="row">
+                        <div class="test_div">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-content dib">
+                                            <h1 style="color: #002752;">参考文献</h1>
+                                            </br>
+                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;1. C. Z. He et al.,
+                                                Single-primer-limited amplification: a method to generate random
+                                                single-stranded DNA sub-library for aptamer selection. Anal Biochem 440,
+                                                63-70 (2013).</br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;2. Q. Wei et al., Comparison of hybridization
+                                                behavior between double and single strand of targets and the application
+                                                of asymmetric PCR targets in cDNA microarray. Journal of Biochemistry
+                                                and Molecular Biology 37, 439-444 (2004).</br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;3. M. Citartan1, T.-H. Tang1, S.-C. Tan, C.-H.
+                                                Hoe1, Asymmetric PCR for good quality ssDNA generation towards DNA
+                                                aptamer production. Songklanakarin Journal of Science and Technology,
+                                                (2012).</br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;4. R. K. Daher, G. Stewart, M. Boissinot, M. G.
+                                                Bergeron, Recombinase Polymerase Amplification for Diagnostic
+                                                Applications. Clin Chem 62, 947-958 (2016).
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div style=" padding: 10px ;
+                                         width: 100%; 
+                                         height: 60px;
+                                         text-align:right;
+                                         font-size: 20px;
+                                         background-color: black;
+                                         color: #ffffff;">
+                            Next :<a href="../safety/safety.html" style="text-decoration: none; color: #ffffff;">Safety Page</a>
+                        </div>
+
+
+
+
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <!--jquery库-->
+    <script src="../js/jquery.min.js"></script>
+    <!--jquery库-->
+    <script src="../js/jquery.nanoscroller.min.js"></script>
+    <!--边栏-->
+    <script src="../js/sidebar.js"></script>
+
+    <script src="../js/pace.min.js"></script>
+
+    <script src="../js/scripts.js"></script>
+    <!-- 鼠标点击效果 -->
+    <script src="../js/cursor-effects.js"></script>
+
+    <script src="../js/snow1.js"></script>
+    <script>
+        /**
+         * This function takes 2 arguments
+         * First is the path to the directory with snowflake images
+         * Second is the maximum number of snowflakes, please do not
+         * set this number above 60 as it will impact the performance
+         */
+        createSnow('', 60);
+    </script>
+
+</body>
+
+
+
+<style>
+    :root {
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent
+    }
+
+    article,
+    aside,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section {
+        display: block
+    }
+
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff
+    }
+
+    [tabindex="-1"]:focus {
+        outline: 0 !important
+    }
+
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: .5rem
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+
+    abbr[data-original-title],
+    abbr[title] {
+        text-decoration: underline;
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+        cursor: help;
+        border-bottom: 0;
+        -webkit-text-decoration-skip-ink: none;
+        text-decoration-skip-ink: none
+    }
+
+    address {
+        margin-bottom: 1rem;
+        font-style: normal;
+        line-height: inherit
+    }
+
+    dl,
+    ol,
+    ul {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+
+    ol ol,
+    ol ul,
+    ul ol,
+    ul ul {
+        margin-bottom: 0
+    }
+
+    dt {
+        font-weight: 700
+    }
+
+    dd {
+        margin-bottom: .5rem;
+        margin-left: 0
+    }
+
+    blockquote {
+        margin: 0 0 1rem
+    }
+
+    b,
+    strong {
+        font-weight: bolder
+    }
+
+    small {
+        font-size: 80%
+    }
+
+    sub,
+    sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline
+    }
+
+    sub {
+        bottom: -.25em
+    }
+
+    sup {
+        top: -.5em
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent
+    }
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline
+    }
+
+    a:not([href]):not([tabindex]) {
+        color: inherit;
+        text-decoration: none
+    }
+
+    a:not([href]):not([tabindex]):focus,
+    a:not([href]):not([tabindex]):hover {
+        color: inherit;
+        text-decoration: none
+    }
+
+    a:not([href]):not([tabindex]):focus {
+        outline: 0
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 1em
+    }
+
+    pre {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        overflow: auto
+    }
+
+    figure {
+        margin: 0 0 1rem
+    }
+
+    img {
+        vertical-align: middle;
+        border-style: none
+    }
+
+    svg {
+        overflow: hidden;
+        vertical-align: middle
+    }
+
+    table {
+        border-collapse: collapse
+    }
+
+    caption {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        color: #6c757d;
+        text-align: left;
+        caption-side: bottom
+    }
+
+    th {
+        text-align: inherit
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: .5rem
+    }
+
+    button {
+        border-radius: 0
+    }
+
+    button:focus {
+        outline: 1px dotted;
+        outline: 5px auto -webkit-focus-ring-color
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit
+    }
+
+    button,
+    input {
+        overflow: visible
+    }
+
+    button,
+    select {
+        text-transform: none
+    }
+
+    select {
+        word-wrap: normal
+    }
+
+    [type=button],
+    [type=reset],
+    [type=submit],
+    button {
+        -webkit-appearance: button
+    }
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+        cursor: pointer
+    }
+
+    [type=button]::-moz-focus-inner,
+    [type=reset]::-moz-focus-inner,
+    [type=submit]::-moz-focus-inner,
+    button::-moz-focus-inner {
+        padding: 0;
+        border-style: none
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+        box-sizing: border-box;
+        padding: 0
+    }
+
+    input[type=date],
+    input[type=datetime-local],
+    input[type=month],
+    input[type=time] {
+        -webkit-appearance: listbox
+    }
+
+    textarea {
+        overflow: auto;
+        resize: vertical
+    }
+
+    fieldset {
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0
+    }
+
+    legend {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+        line-height: inherit;
+        color: inherit;
+        white-space: normal
+    }
+
+    progress {
+        vertical-align: baseline
+    }
+
+    [type=number]::-webkit-inner-spin-button,
+    [type=number]::-webkit-outer-spin-button {
+        height: auto
+    }
+
+    [type=search] {
+        outline-offset: -2px;
+        -webkit-appearance: none
+    }
+
+    [type=search]::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+
+    ::-webkit-file-upload-button {
+        font: inherit;
+        -webkit-appearance: button
+    }
+
+    output {
+        display: inline-block
+    }
+
+    summary {
+        display: list-item;
+        cursor: pointer
+    }
+
+    template {
+        display: none
+    }
+
+    [hidden] {
+        display: none !important
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2
+    }
+
+    .h1,
+    h1 {
+        font-size: 2.5rem
+    }
+
+    .h2,
+    h2 {
+        font-size: 2rem
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.75rem
+    }
+
+    .h4,
+    h4 {
+        font-size: 1.5rem
+    }
+
+    .h5,
+    h5 {
+        font-size: 1.25rem
+    }
+
+    .h6,
+    h6 {
+        font-size: 1rem
+    }
+
+    .lead {
+        font-size: 1.25rem;
+        font-weight: 300
+    }
+
+    .display-1 {
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 1.2
+    }
+
+    .display-2 {
+        font-size: 5.5rem;
+        font-weight: 300;
+        line-height: 1.2
+    }
+
+    .display-3 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2
+    }
+
+    .display-4 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2
+    }
+
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, .1)
+    }
+
+    .small,
+    small {
+        font-size: 80%;
+        font-weight: 400
+    }
+
+    .mark,
+    mark {
+        padding: .2em;
+        background-color: #fcf8e3
+    }
+
+    .list-unstyled {
+        padding-left: 0;
+        list-style: none
+    }
+
+    .list-inline {
+        padding-left: 0;
+        list-style: none
+    }
+
+    .list-inline-item {
+        display: inline-block
+    }
+
+    .list-inline-item:not(:last-child) {
+        margin-right: .5rem
+    }
+
+    .initialism {
+        font-size: 90%;
+        text-transform: uppercase
+    }
+
+    .blockquote {
+        margin-bottom: 1rem;
+        font-size: 1.25rem
+    }
+
+    .blockquote-footer {
+        display: block;
+        font-size: 80%;
+        color: #6c757d
+    }
+
+    .blockquote-footer::before {
+        content: "\2014\00A0"
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto
+    }
+
+    .img-thumbnail {
+        padding: .25rem;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: .25rem;
+        max-width: 100%;
+        height: auto
+    }
+
+    .figure {
+        display: inline-block
+    }
+
+    .figure-img {
+        margin-bottom: .5rem;
+        line-height: 1
+    }
+
+    .figure-caption {
+        font-size: 90%;
+        color: #6c757d
+    }
+
+    code {
+        font-size: 87.5%;
+        color: #e83e8c;
+        word-break: break-word
+    }
+
+    a>code {
+        color: inherit
+    }
+
+    kbd {
+        padding: .2rem .4rem;
+        font-size: 87.5%;
+        color: #fff;
+        background-color: #212529;
+        border-radius: .2rem
+    }
+
+    kbd kbd {
+        padding: 0;
+        font-size: 100%;
+        font-weight: 700
+    }
+
+    pre {
+        display: block;
+        font-size: 87.5%;
+        color: #212529
+    }
+
+    pre code {
+        font-size: inherit;
+        color: inherit;
+        word-break: normal
+    }
+
+    .pre-scrollable {
+        max-height: 340px;
+        overflow-y: scroll
+    }
+
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    @media (min-width:576px) {
+        .container {
+            max-width: 540px
+        }
+    }
+
+    @media (min-width:768px) {
+        .container {
+            max-width: 720px
+        }
+    }
+
+    @media (min-width:992px) {
+        .container {
+            max-width: 960px
+        }
+    }
+
+    @media (min-width:1200px) {
+        .container {
+            max-width: 1140px
+        }
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px
+    }
+
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0
+    }
+
+    .no-gutters>.col,
+    .no-gutters>[class*=col-] {
+        padding-right: 0;
+        padding-left: 0
+    }
+
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+    .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%
+    }
+
+    .col-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%
+    }
+
+    .col-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%
+    }
+
+    .col-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%
+    }
+
+    .col-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+
+    .col-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%
+    }
+
+    .col-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%
+    }
+
+    .col-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+
+    .col-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%
+    }
+
+    .col-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%
+    }
+
+    .col-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+
+    .col-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%
+    }
+
+    .col-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%
+    }
+
+    .col-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+    .order-first {
+        -ms-flex-order: -1;
+        order: -1
+    }
+
+    .order-last {
+        -ms-flex-order: 13;
+        order: 13
+    }
+
+    .order-0 {
+        -ms-flex-order: 0;
+        order: 0
+    }
+
+    .order-1 {
+        -ms-flex-order: 1;
+        order: 1
+    }
+
+    .order-2 {
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    .order-3 {
+        -ms-flex-order: 3;
+        order: 3
+    }
+
+    .order-4 {
+        -ms-flex-order: 4;
+        order: 4
+    }
+
+    .order-5 {
+        -ms-flex-order: 5;
+        order: 5
+    }
+
+    .order-6 {
+        -ms-flex-order: 6;
+        order: 6
+    }
+
+    .order-7 {
+        -ms-flex-order: 7;
+        order: 7
+    }
+
+    .order-8 {
+        -ms-flex-order: 8;
+        order: 8
+    }
+
+    .order-9 {
+        -ms-flex-order: 9;
+        order: 9
+    }
+
+    .order-10 {
+        -ms-flex-order: 10;
+        order: 10
+    }
+
+    .order-11 {
+        -ms-flex-order: 11;
+        order: 11
+    }
+
+    .order-12 {
+        -ms-flex-order: 12;
+        order: 12
+    }
+
+    .offset-1 {
+        margin-left: 8.333333%
+    }
+
+    .offset-2 {
+        margin-left: 16.666667%
+    }
+
+    .offset-3 {
+        margin-left: 25%
+    }
+
+    .offset-4 {
+        margin-left: 33.333333%
+    }
+
+    .offset-5 {
+        margin-left: 41.666667%
+    }
+
+    .offset-6 {
+        margin-left: 50%
+    }
+
+    .offset-7 {
+        margin-left: 58.333333%
+    }
+
+    .offset-8 {
+        margin-left: 66.666667%
+    }
+
+    .offset-9 {
+        margin-left: 75%
+    }
+
+    .offset-10 {
+        margin-left: 83.333333%
+    }
+
+    .offset-11 {
+        margin-left: 91.666667%
+    }
+
+    @media (min-width:576px) {
+        .col-sm {
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%
+        }
+
+        .col-sm-auto {
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%
+        }
+
+        .col-sm-1 {
+            -ms-flex: 0 0 8.333333%;
+            flex: 0 0 8.333333%;
+            max-width: 8.333333%
+        }
+
+        .col-sm-2 {
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%
+        }
+
+        .col-sm-3 {
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%
+        }
+
+        .col-sm-4 {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%
+        }
+
+        .col-sm-5 {
+            -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%
+        }
+
+        .col-sm-6 {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%
+        }
+
+        .col-sm-7 {
+            -ms-flex: 0 0 58.333333%;
+            flex: 0 0 58.333333%;
+            max-width: 58.333333%
+        }
+
+        .col-sm-8 {
+            -ms-flex: 0 0 66.666667%;
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%
+        }
+
+        .col-sm-9 {
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%
+        }
+
+        .col-sm-10 {
+            -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+            max-width: 83.333333%
+        }
+
+        .col-sm-11 {
+            -ms-flex: 0 0 91.666667%;
+            flex: 0 0 91.666667%;
+            max-width: 91.666667%
+        }
+
+        .col-sm-12 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%
+        }
+
+        .order-sm-first {
+            -ms-flex-order: -1;
+            order: -1
+        }
+
+        .order-sm-last {
+            -ms-flex-order: 13;
+            order: 13
+        }
+
+        .order-sm-0 {
+            -ms-flex-order: 0;
+            order: 0
+        }
+
+        .order-sm-1 {
+            -ms-flex-order: 1;
+            order: 1
+        }
+
+        .order-sm-2 {
+            -ms-flex-order: 2;
+            order: 2
+        }
+
+        .order-sm-3 {
+            -ms-flex-order: 3;
+            order: 3
+        }
+
+        .order-sm-4 {
+            -ms-flex-order: 4;
+            order: 4
+        }
+
+        .order-sm-5 {
+            -ms-flex-order: 5;
+            order: 5
+        }
+
+        .order-sm-6 {
+            -ms-flex-order: 6;
+            order: 6
+        }
+
+        .order-sm-7 {
+            -ms-flex-order: 7;
+            order: 7
+        }
+
+        .order-sm-8 {
+            -ms-flex-order: 8;
+            order: 8
+        }
+
+        .order-sm-9 {
+            -ms-flex-order: 9;
+            order: 9
+        }
+
+        .order-sm-10 {
+            -ms-flex-order: 10;
+            order: 10
+        }
+
+        .order-sm-11 {
+            -ms-flex-order: 11;
+            order: 11
+        }
+
+        .order-sm-12 {
+            -ms-flex-order: 12;
+            order: 12
+        }
+
+        .offset-sm-0 {
+            margin-left: 0
+        }
+
+        .offset-sm-1 {
+            margin-left: 8.333333%
+        }
+
+        .offset-sm-2 {
+            margin-left: 16.666667%
+        }
+
+        .offset-sm-3 {
+            margin-left: 25%
+        }
+
+        .offset-sm-4 {
+            margin-left: 33.333333%
+        }
+
+        .offset-sm-5 {
+            margin-left: 41.666667%
+        }
+
+        .offset-sm-6 {
+            margin-left: 50%
+        }
+
+        .offset-sm-7 {
+            margin-left: 58.333333%
+        }
+
+        .offset-sm-8 {
+            margin-left: 66.666667%
+        }
+
+        .offset-sm-9 {
+            margin-left: 75%
+        }
+
+        .offset-sm-10 {
+            margin-left: 83.333333%
+        }
+
+        .offset-sm-11 {
+            margin-left: 91.666667%
+        }
+    }

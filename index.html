@@ -1,0 +1,377 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="Bookmark" href="src/none.png" />
+    <link rel="shortcut icon" href="src/none.png" type="image/x-icon" />
+    <link rel="icon" href="src/none.png" type="image/x-icon" />
+
+
+    <title>USTC-homepage</title>
+
+    <style type="text/css">
+        html {
+            overflow-x: hidden;
+        }
+    </style>
+
+    <!-- Common -->
+    <!--
+    <link
+        href="https://2021.igem.org/wiki/index.php?title=Template:USTC/CSS/assets/css/solution.css&action=raw&ctype=text/css"
+        type="text/css" rel="stylesheet" />
+
+    <link
+        href="https://2021.igem.org/wiki/index.php?title=Template:USTC/CSS/assets/css/lib/font-awesome.min.css&action=raw&ctype=text/css"
+        type="text/css" rel="stylesheet" />-->
+
+    <link href="css/themify-icons.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/sidebar.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+    <!--<link
+        href="https://2021.igem.org/wiki/index.php?title=Template:USTC/CSS/assets/css/lib/helper.css&action=raw&ctype=text/css"
+        type="text/css" rel="stylesheet" />-->
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <style type="text/css">
+        .test_div {
+            height: auto;
+            width: 100%;
+            flex-direction: column;
+
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+
+            display: flex;
+        }
+
+        .lm_button {
+            background-color: #7498af;
+            height: 3%;
+            width: 100%;
+
+            position: relative;
+        }
+
+        .button_text_mine {
+            /* display: inline-block; */
+            height: 100px;
+            line-height: 100px;
+            width: 100%;
+            vertical-align: middle;
+            overflow: hidden;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 500%;
+
+
+            cursor: pointer;
+        }
+
+        .focus-in-expand {
+            animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes focus-in-expand {
+            0% {
+                letter-spacing: -0.3em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
+        .blur-out-expand {
+            animation: blur-out-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes blur-out-expand {
+            0% {
+                filter: blur(0.01);
+            }
+
+            100% {
+                letter-spacing: 0.3em;
+                filter: blur(12px) opacity(0%);
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+        uiWelcome_place = 0;
+    </script>
+
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <div class="logo">
+                    <!-- <img src="assets/images/logo.png" alt="" /> -->
+                    <a href="index.html">
+                        <!-- <img src="assets/images/logo.png" alt="" /> --></br>
+                        <span href="index.html" style="font-size:32px">USTC 2023</span>
+                    </a>
+                </div>
+                <ul>
+                    <li class="label" style="font-size:16px">Nav-bar</li>
+
+                    <li>
+                        <a class="sidebar-sub-toggle"style="font-size:19px">
+                            <i class="ti-user"></i> Team
+                            <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="team/members.html" style="font-size: 17px;">Members</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="sidebar-sub-toggle"style="font-size:19px">
+                            <i class="ti-calendar"></i>Project
+                            <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="project/introduction.html" style="font-size:17px">Introduction</a>
+                            </li>
+
+                            <li>
+                                <a href="project/description.html" style="font-size:17px">Description</a>
+                            </li>
+                            
+                            <li>
+                                <a href="project/design.html" style="font-size:17px">Design</a>
+                            </li>
+                            <li>
+                                <a href="project/results.html" style="font-size:17px">Results</a>
+                            </li>
+                            
+                            <li>
+                                <a href="project/future.html" style="font-size:17px">Future</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="sidebar-sub-toggle"style="font-size:19px">
+                            <i class="ti-calendar"></i>Documentation
+                            <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="documentation/notebook.html" style="font-size: 17px;">Notebook</a>
+                            </li>
+                            <li>
+                                <a href="documentation/protocol.html" style="font-size: 17px;">Protocol</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="hp/collaboration.html"style="font-size:19px">
+                            <i class="ti-heart"></i> Collaboration</a>
+                    </li>
+
+                    <li>
+                        <a class="sidebar-sub-toggle"style="font-size:19px">
+                            <i class="ti-view-list-alt"></i> Model
+
+                            <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="model/model.html" style="font-size:17px">Model</a>
+                            </li>
+                            
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="safety/safety.html" style="font-size:19px">
+                            <i class="ti-home"></i>Safety
+                            <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        
+                    </li>
+                    <!--<li>
+                        <a href="parts/parts.html">
+                            <i class="ti-layout-grid4-alt"></i> 元件</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header" style="position: fixed; top: 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="uiWelcome" style="position: fixed; width: 100%; z-index: 9; top: 40%; margin-top: -100px;">
+        <p class="focus-in-expand" style="color: #FFFFFF;
+                margin: 0;
+                font-size: 70px;
+                text-shadow:0px 0px 18px #ffffff;
+                text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to</p>
+        <p class="focus-in-expand" style="color: #FFFFFF;
+                margin: 0;
+                font-size: 70px;
+                text-shadow:0px 0px 18px #ffffff;
+                text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;our Studies</p>
+        <p class="focus-in-expand" style="color: #FFFFFF;
+                font-size: 50px;
+                font-style: italic;
+                text-shadow:0px 0px 18px #ffffff;
+                text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;presented jointly by USTC</p>
+    </div>
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid" style="padding: 0%;">
+                <section id="main-content">
+                    <div class="row">
+                        <div class="test_div">
+
+                            
+                            <img src="src/bg.jpg" style="height:100%;"></img>
+                            <div class="row">
+                                <div class="test_div">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="stat-widget-one">
+                                                <div class="stat-content dib">
+                                                    <h1 style="color: #002752;" align="center">Abstract</h1>
+                                                    <div class="stat-digit">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N-Boc-3-pyrrolidinol is an important pharmaceutical intermediate with high economic value for both R- and S-types. Traditional chemical production methods are often costly because of the difficulty in splitting the optical isomers. The use of enzymatic asymmetrical catalysis of pre-chiral ketones for asymmetric reduction to produce optically active alcohols has high industrial application. We selected an Alcohol dehydrogenase from a thermophilic microorganism Thermoethanolicus brockii (TbsADH), which has been reported in previous work to perform expertly selective asymmetric reduction, but its reaction rate is low. Directed evolution is a powerful means to modify biological macromolecules and can be designed and screened according to the needs of the target function. Among them, structure-based rational design and continuous directed evolution systems using the organism itself can greatly reduce the size of mutation libraries and save time. We constructed an EvolvR-based sequential directed evolution system with rational design based on the structure of the enzyme to obtain TbsADH catalyzing the asymmetric reduction of N-Boc-3-pyrrolidone to N-Boc-3-pyrrolidinol.<br>
+                                                    </div>
+                                                    <div>
+                                                        </br>
+                                                        <center><img src="src/homepage.png" width="70%" />
+                                                        </center>
+                                                        </br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<center style="background-color: rgb(52,57,87);">
+                                <div class="card">
+                                    <h1><a style="color: #343957; font-size: larger;"
+                                            href="project/description.html">了解更多</a>
+                                    </h1>
+                                </div>
+                            </center>-->
+                            <img src="src/T--USTC--footer.png"
+                                style="max-width: 100%; min-width: 100%;height: auto;"></img>
+                            <div style=" padding: 10px ;
+                                         width: 100%; 
+                                         height: 60px;
+                                         text-align:right;
+                                         font-size: 20px;
+                                         background-color: black;
+                                         color: #ffffff;">
+                                Next :<a href="team/members.html" style="text-decoration: none;">Members Page</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onscroll = function () {
+
+            if (uiWelcome_place == 0) {
+                document.getElementById("uiWelcome").getElementsByTagName("p")[0].className = "blur-out-expand";
+                document.getElementById("uiWelcome").getElementsByTagName("p")[1].className = "blur-out-expand";
+                document.getElementById("uiWelcome").getElementsByTagName("p")[2].className = "blur-out-expand";
+                uiWelcome_place = 1;
+                console.log(uiWelcome_place);
+            }
+            if (window.pageYOffset == 0) {
+                document.getElementById("uiWelcome").getElementsByTagName("p")[0].className = "focus-in-expand";
+                document.getElementById("uiWelcome").getElementsByTagName("p")[1].className = "focus-in-expand";
+                document.getElementById("uiWelcome").getElementsByTagName("p")[2].className = "focus-in-expand";
+                uiWelcome_place = 0;
+                console.log(uiWelcome_place);
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        var elevideo = document.getElementById("wuxiaoyu_sb");
+        elevideo.addEventListener('play', function () { //播放开始执行的函数
+            document.getElementById("uiWelcome").getElementsByTagName("p")[0].className = "blur-out-expand";
+            document.getElementById("uiWelcome").getElementsByTagName("p")[1].className = "blur-out-expand";
+            document.getElementById("uiWelcome").getElementsByTagName("p")[2].className = "blur-out-expand";
+            uiWelcome_place = 1;
+            console.log(uiWelcome_place);
+            console.log("开始播放");
+        });
+    </script>
+    <!--jquery库-->
+    <script src="js/jquery.min.js"></script>
+    <!--jquery库-->
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <!--边栏-->
+    <script src="js/sidebar.js"></script>
+
+    <script src="js/pace.min.js"></script>
+
+    <!--不知道有什么用
+    <script
+        src="https://2021.igem.org/wiki/index.php?title=Template:USTC/JS/assets/js/lib/bootstrap.min.js&action=raw&ctype=text/javascript"></script>
+    -->
+    <script src="js/scripts.js"></script>
+
+    <!-- 鼠标点击效果 -->
+    <script src="js/cursor-effects.js"></script>
+
+    <script src="js/snow.js"></script>
+    <script>
+        /**
+         * This function takes 2 arguments
+         * First is the path to the directory with snowflake images
+         * Second is the maximum number of snowflakes, please do not
+         * set this number above 60 as it will impact the performance
+         */
+        createSnow('', 60);
+    </script>
+</body>
