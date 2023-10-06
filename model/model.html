@@ -90,7 +90,7 @@
                         </li>
                         
                         <li>
-                            <a href="../project/future.html" style="font-size:17px">Future</a>
+                            <a href="../project/conclusion and disscussion.html" style="font-size:17px">Conclusion and Discussion</a>
                         </li>
                     </ul>
                 </li>
@@ -160,8 +160,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="content-wrap">
         <div class="main">
             <div class="container-fluid">
@@ -188,297 +186,307 @@
                                 <div class="card">
                                     <div class="stat-widget-one">
                                         <div class="stat-content dib">
-                                            <h2 style="color: #002752;">Overview</h2>
-                                            </br>
-                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                To provide strategies for optimizing experimental results and to further verify the feasibility of the experimental design, we use the model as a prediction. In this project, the model we designed is divided into Theoretical calculation, optimal enzyme ratio and diffusion simulation.
-                                            </div>
-                                           
-                                            <!--<div>
-                                                <center>
-                                                    <table width="600" border="1">
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>名称</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>引物</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>模板</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>酶</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>适配体</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>Tau 蛋白</center>
-                                                                </b></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>符号</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>P</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>X</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>E</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>apt</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>tau</center>
-                                                                </b></td>
-                                                        </tr>
-                                                    </table>
-                                                </center>
-                                            </div>-->
+
+                                            <h3 style="color: #002752;"><b>Introduction</b></h3>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;According to the design, we introduced a reaction pathway into the peroxisome of the Yarrowia lipolytica to produce borneol. It is a multi-step reaction from acetyl coenzyme A to GPP, the precursor of borneol. The relative amount of enzymes, i.e., enzyme ratio, plays a critical role in driving the overall reaction. In order to maximize the yield of borneol to provide adequate raw material for the drug, here we build a kinetic model combining five reactions from acetyl coenzyme A to mevalonate diphosphate to predict the optimal enzyme ratio for the reactions.
+                                            </p>
+                                            <h3 style="color: #002752;"><b>Description</b></h3>
+                                                <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Let's start with the reaction pathway, cf. Fig. 1. In the peroxisome：
+                                            </p>
+                                            <img class="center" id="mt0" src="../src/mo-0.png" atr="fig"width="50%">
+                                            <figcaption class="figure-caption">
+                                                <b>Fig.1.: Multi-compartment model</b>
+                                                <!-- ... -->
+                                            </figcaption>
                                             <br>
+                                            <!-- <br>
+                                            <img class="center" src="#" atr="">
+                                               <figcaption class="figure-caption text-center">
+                                               <b>Fig1：The pathway of GPP</b>
+                                         </figcaption>
+                                            <br> -->
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;The Yarrowia lipolytica produces acetyl coenzyme A through the β-oxidation of fatty acids in the peroxisome. Acetyl coenzyme A is then used to produce the precursor of borneol in an eight-step reaction that we have introduced. It is known that there are not above reactions and corresponding side reactions in the peroxisome before engineering. Theoretically, increasing the yield of mevalonate diphosphate would facilitate the production of GPP. The yield of mevalonate diphosphate is strongly linked to the enzyme ratio in the upstream reactions. So, we will explore the optimal enzyme ratio for the production of mevalonate diphosphate in the following section.
+                                            </p>
+                                            <p>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;First of all, we use Michaelis-menten equation to describe the kinetics of an enzymatic reaction：
+                                            </p>
+                                                <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;The following symbols are used in our models：
+                                            </p>
+                                                <br>
+                                            <img class="center" id="mt1" src="../src/mo-1.png" atr="fig">
+                                             <br>
+                                               <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction of the synthesis of S6 and its upstream reactions:
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction1：(E1)2S1 ⟺ S2+ CoA
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<b>forward reaction：</b>
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg1" src="../src/mo-2.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<b>reverse reaction：</b>
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg2" src="../src/mo-3.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction2：(E2)S2 + CoA ⟹ S3
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg3" src="../src/mo-4.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction3：(E3)S3 + 2NADPH + 2H+ ⟹ S4 + 2NADP+ + CoA
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg4" src="../src/mo-5.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction4：(E4)	 S4 + ATP ⟹ S5 + ADP
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg5" src="../src/mo-6.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction5：(E5)	 S5 + ATP ⟹ S6 + ADP
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg6" src="../src/mo-7.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction of S6 consumption:
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Reaction6：(E6)S6+ ATP ⟹ S7 + Pi + CO2 + ADP
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg7" src="../src/mo-8.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;The above parameters can be found in subsection <b>Parameters</b>.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;We ignore the reverse reactions of reactions 2 to 6 because their rate constants (k) are much smaller than forward reactions’. Using these rate equations, we can establish the relationship between the concentration of acetyl coenzyme A and the concentration of mevalonate diphosphate at certain enzyme ratio.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;If we want to explore the optimal enzyme ratio for reactions, we need to assume a constant value for the sum of enzymes and then change the enzyme ratio to compare the yield of GPP at different ratios. Based on the Genetic Algorithm, we search for the optimal resolution by simulating the natural evolutionary process. 
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;First, we set each enzyme to an initial value of 20 and fix the total number of enzymes to 120. We consider the relative content of the six enzymes as six genes and then code these genes into yeast ‘s “chromosome”. Each individual represents a solution for given problem.
+                                            </p>
+                                            <!-- <img class="center" src="#" atr="fig2"> -->
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Second, we assume that a yeast produces one yeast as a generation and that Simple Mutation occurs in every generation, which means that a variation operation is performed on the values of two randomly specified motifs in the coding string, i.e. the values of two enzymes are randomly changed while the total number of enzymes remains unchanged.
+                                            </p>
+                                            <!-- <img class="center" src="#" atr="fig3"> -->
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Third, for each offspring, we compare fitness with the previous generation and select. We decode the individual coding strings to obtain the phenotype, i.e. the enzyme ratio, and then we can calculate the corresponding S6 yield and compare the fitness of this generation with that of the previous generation. If it is higher than the fitness of the previous generation, we eliminate the previous generation and produce offspring based on this generation, otherwise we eliminate this generation and continue to produce offspring based on the previous generation.
+                                            </p>
+                                            <!-- <img class="center" src="#" atr="fig4"> -->
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Thus each successive generation is more suited for their environment, which means that the optimal enzyme ratio can be calculated eventually.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;However, during the process, we found that if we used S6 yield directly as a function of fitness to compare yeast fitness, the reaction time steps would have to be within 1*10^ (-4) s in order to accurately obtain the concentration of the substrate in each reaction. Within a finite number of cycles, the program could only obtain S6 yield in a very short time, which couldn’t meet the yeast fermentation time designed. 
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;So, we made some improvements and used mathematical proofs to convert the problem of comparing S6 concentrations at equilibrium into a problem of comparing the slope of the S6 concentration as a function of time, so that the program could predict the S6 concentration at equilibrium in a shorter time.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;The following is the process of our proof.
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg8" src="../src/mo-9.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;S6 concentration derivative with respect to time：
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg9" src="../src/mo-10.png" atr="fig">
+                                            <br>
+                                            <img class="center" src="../src/mo-11.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;When the concentration of S6 → +∞:
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg11" src="../src/mo-12.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Since the S6 concentration actually cannot tend to infinity, so:
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg12" src="../src/mo-13.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Solving the differential equation gives：
+                                            </p>
+                                            <br>
+                                            <img class="center" src="../src/mo-14.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;When t → +∞, the reaction reaches equilibrium and the concentration of S6 tends to a constant value, from which we can deduce the concentration of S6 at equilibrium:
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg14" src="../src/mo-15.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Next, we prove that the greater the slope of the function of S6 concentration as a function of time, the greater the S6 equilibrium concentration.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Clearly, the S6 equilibrium concentration is monotonically increasing with respect to C1.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;We consider S6 ,i.e. the slope at a concentration of S6 equal to half of the equilibrium concentration, when the slope has stabilised.
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg15" src="../src/mo-16.png" atr="fig">
+                                            <br>
+                                            <img class="center" id="mg16" src="../src/mo-17.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Derivation with respect to C1 gives：
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg17" src="../src/mo-18.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Since the magnitude of C2 is around 10^(-6), we get:
+                                            </p>
+                                            <br>
+                                            <img class="center" id="mg18" src="../src/mo-19.png" atr="fig">
+                                            <br>
+                                            <img class="center" id="mg19" src="../src/mo-20.png" atr="fig">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;So, the slope of the function of S6 concentration as a function of time is monotonically increasing with respect to C1.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Finally, we can conclude that the greater the slope of the function of S6 concentration as a function of time, the greater the equilibrium concentration of S6.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Based on this, our program can predict and compare the magnitude of the S6 equilibrium concentration by the change in S6 concentration over a shorter period of time, and thus get the optimum enzyme ratio more efficiently.
+                                            </p>
+                                            <h4>Results</h4>
+                                            <br>
+                                            <img class="center" src="../src/mo-21.png" atr=""width="50%">
+                                            <figcaption class="figure-caption">
+                                                <b>Fig.2.: Optimal enzyme ratio</b>
+                                                <!-- ... -->
+                                            </figcaption>
+                                            <br>
+                    
+                                            <h4>Parameters:</h4>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Here we are going to introduce our choice of parameters.
+                                            </p>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;The following are the parameters that will be used in the rate equations. 
+                                            </p>
+                                            <br>
+                                            <img class="center" src="../src/mo-22.png" atr=""width="70%">
+                                            <br>
+                                            <img class="center" src="../src/mo-23.png" atr=""width="70%">
+                                            <br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Considering that the carbon source of lipolytic yeast in the design is fatty acids and that the yeast peroxisome uses fatty acids for β-oxidation to produce relatively high concentration of acetyl coenzyme A, we considered the concentration of acetyl coenzyme A in the peroxisome as a constant value. The peroxisome is a relatively closed system and the major intermediates, end products and enzymes of our introduced reaction pathway were not present before the modification, so the initial S2 to S6 concentrations were 0. The enzyme concentrations for each reaction were on the order of μM.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="test_div">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="stat-widget-one">
-                                        <div class="stat-content dib">
-                                            <div class="stat-text"></div>
-                                            <h2 style="color: #002752;">Theoretical calculation</h2>
-                                            </br>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We calculated the feasibility of the reaction by using the Gaussian16 computer program: We used the opt freq work type for the measurements, The Gibbs free energy prediction of H2 reduction to N-Boc-3-pyrrolidinone was performed using b3lyp functional, 6-31g (d) as base groups (other keywords: scrf= (solvent = 10 water) geom=connectivity), The reducing reaction Gibbs free energy of the R and S configurations is equal to + 7.157 kJ/mol, respectively, +3.970 kJ/mol, The corresponding redox potential is -0.037 V, -0.021 V, Referring to the redox potential of NADPH at-0.32V, We believe that the reaction is thermodynamically feasible.
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="test_div">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="stat-widget-one">
-                                        <div class="stat-content dib">
-                                            <div class="stat-text"></div>
-                                            <h2 style="color: #002752;">Optimal enzyme ratio</h2>
-                                            </br>
-                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We hope that the modeling calculations will lead to the optimal feeding ratio to balance the equilibrium between the two enzymatic reactions.
-                                            </div>
-                                            <div class="stat-digit"><b>Table. 1. Symbol Description</b>
-                                            </div>
-                                            <div>
-                                                <center>
-                                                    <table width="600" border="1">
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>Species names</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>N-Boc-3-pyrrolidinone</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>N-boc-3-pyrrolidinol</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>Glucose</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>Gluconolactone</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>TbsADH</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>GDH</center>
-                                                                </b></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>Symbol used</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>S<sub>1</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>P<sub>1</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>S<sub>2</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>P<sub>2</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>E<sub>1</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>E<sub>2</sub></center>
-                                                                </b></td>
-                                                        </tr>
-                                                    </table>
-                                                </center>
-                                            </div>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction1:(E<sub>1</sub>)S<sub>1</sub>+NADPH +H<sup>+</sup>⟺ P<sub>1</sub>+ NADP<sup>+</sup>
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/mo-1.png"
-                                                        width="208" height="108" /></center>
-                                            </div>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction2:(E<sub>2</sub>)S<sub>2</sub>+NADP<sup>+</sup>⟹ P<sub>2</sub>+NADPH +H<sup>+</sup> 
-                                            </div>
-                                            <div>
-                                                <center><img
-                                                        src="../src/mo-2.png"
-                                                        width="199" height="95" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is not advisable to assume that the enzyme consumes the substrate and the cofactor at equal rates. In order for the two reactions to be balanced, the net consumption of NADPH should be 0, which means:
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/mo-3.png"
-                                                        width="112" height="45" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parameter is listed in the following table. <br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table. 2 Parameter Selection
-                                            </div>
-                                            <div>
-                                                <center>
-                                                    <table width="600" border="1">
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>Parameter</center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>Value</center>
-                                                                </b></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>K<sub>m1</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>0.06±0.006 mM</center>
-                                                                </b></td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>K<sub>m2</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>0.216±0.007 mM</center>
-                                                                </b></td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>K<sub>2</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>1.309±0.80 s<sup>-1</sup></center>
-                                                                </b></td>
-                                                            
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>K<sub>1</sub></center>
-                                                                </b></td>
-                                                            <td width="60" height="30"><b>
-                                                                    <center>8.12±0.56 s<sup>-1</sup></center>
-                                                                </b></td>
-                                                            
-                                                        </tr>
-                                                    </table>
-                                                </center>
-                                            </div>
-                                            <br>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bringing in the parameters and substrate concentrations we can find:
-                                            </div>
-
-                                            <center>
-                                                <img src="../src/mo-4.png"
-                                                    width="125" height="105" />
+                        <div class="row">
+                            <div class="test_div">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="stat-widget-one">
+                                            <div class="stat-content dib">
+                                                <div class="stat-text">
+                                                <h3 style="color: #002752;"><b>enzyme ratio optimization</b></h3>
+                                                </br>
                                                 
-                                            </center>
-
-                                           
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the results the usage (mol) of the two enzymes is different. Considering the molecular weight of the two enzymes is about 2:1, the ratio should be about 1:8 (g).
+                                                <div class="stat-digit">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, we obtained K<sub>m</sub> and K<sub>cat</sub>(or V<sub>max</sub>) for individual reactions in the following path.
+                                                    <br><br>
+                                                    <div>
+                                                        <center><img
+                                                            src="../src/mo-24.png"
+                                                            
+                                                            width="80%"  />
+                                                            <br>
+                                                            <h6>Fig.1. </h6>
+                                                        </center>
+                                                        </br><br>
+                                                    </div>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We searched for the constants for the first-step reaction and got the following results.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V<sub>max</sub>=8.87mmol/s
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K<sub>m</sub> = 0.51 mM
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What follows are the constants for the Michaelis-Menten equation.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V<sub>max</sub>=225±13(nkat*mg<sup>-1</sup>)
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K<sub>m</sub> = 25 ±4(mM)
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So, if the estimate v=V<sub>max</sub> valid, the concentration of galactose is required to be over 100 K<sub>m</sub>(2.5mol·L<sup>-1</sup>) when v=0.99V<sub>max</sub>. 
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, it is a concentration impossible to reach in vivo.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, we did not find constants for RIGDH measured in an environment similar to the in vivo one, which is explained by the instability of NADH in lower pH.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And the K<sub>m</sub> is 8.8 mM, K<sub>cat</sub> is 13.5 U under pH 9.0 and 37℃
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to the figure "Effect of pH on the activity of RIGDH", the activity of RIGDH is reduced to about 20%, consequently, we estimate K<sub>cat</sub> to be 13.5 * 20% U under pH 6.5-7.0.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We employed an optimization algorithm that contains initiation, target function calculation, iteration with mutation, and result evaluation.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For initiation, we chose random distribution to initial the ratio of the enzymes. This initiation is done 50 or more times to create a group of particles, each representing a certain ratio. With this group of particles, we could achieve the effect of Particle Swam Optimization.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then we consider the concentration of tagatose in a pre-determined time as the target value.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We iterate the ratio of enzymes in two ways. First, in a certain possibility, we made all of the particles move toward the best ratio in a recent situation. Otherwise, a random search is made to avoid being stuck to a local optimization.
+                                                    <br><br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We iterate about 50 times and plot the ratio of every particle as a result. A single particle's ratio change and corresponding target value were also plotted for observation.
+                                                    <br><br>
+                                                    <div>
+                                                        <center><img
+                                                            src="../src/mo-25.png"
+                                                            
+                                                            width="50%"  />
+                                                            <br>
+                                                            <h6>Fig.2. </h6>
+                                                        </center>
+                                                        </br><br>
+                                                    </div>
+                                                    <div>
+                                                        <center><img
+                                                            src="../src/mo-26.png"
+                                                            
+                                                            width="50%"  />
+                                                            <br>
+                                                            <h6>Fig.3. </h6>
+                                                        </center>
+                                                        </br><br>
+                                                    </div>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x is the number of iteration, and y is the ratio of enzymes,the enzyme ratio trajectory of a "particle" (defined as a simulation of reaction in changing enzyme ratio) with corresponding tagatose yield (Fig.2.) and tagatose yield in different relative XR concentrations (Fig.3.)
+                                                </div>
                                             </div>
-
-                                            
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, the above calculation is based on the fact that both enzymes are at their optimal temperatures. The activity of GDH is lower at higher temperatures while the activity of TbsADH is higher. Therefore, the effect of temperature on the activity of both enzymes needs to be considered for industrial applications to reconcile the balance between the reactions.
-                                            </div>
-
-                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <!--<div class="row">
-                        <div class="test_div">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="stat-widget-one">
-                                        <div class="stat-content dib">
-                                            <h1 style="color: #002752;">参考文献</h1>
-                                            </br>
-                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;1. C. Z. He et al.,
-                                                Single-primer-limited amplification: a method to generate random
-                                                single-stranded DNA sub-library for aptamer selection. Anal Biochem 440,
-                                                63-70 (2013).</br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;2. Q. Wei et al., Comparison of hybridization
-                                                behavior between double and single strand of targets and the application
-                                                of asymmetric PCR targets in cDNA microarray. Journal of Biochemistry
-                                                and Molecular Biology 37, 439-444 (2004).</br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;3. M. Citartan1, T.-H. Tang1, S.-C. Tan, C.-H.
-                                                Hoe1, Asymmetric PCR for good quality ssDNA generation towards DNA
-                                                aptamer production. Songklanakarin Journal of Science and Technology,
-                                                (2012).</br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;4. R. K. Daher, G. Stewart, M. Boissinot, M. G.
-                                                Bergeron, Recombinase Polymerase Amplification for Diagnostic
-                                                Applications. Clin Chem 62, 947-958 (2016).
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
                     <div style=" padding: 10px ;
                                          width: 100%; 
                                          height: 60px;
