@@ -75,7 +75,7 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="../project/introduction.html" style="font-size:17px">Introduction</a>
+                            <a href="../project/introduction.html" style="font-size:17px">Background</a>
                         </li>
 
                         <li>
@@ -112,7 +112,7 @@
 
                 <li>
                     <a href="../hp/collaboration.html"style="font-size:19px">
-                        <i class="ti-heart"></i> Collaboration</a>
+                        <i class="ti-heart"></i>Human Practice</a>
                 </li>
 
                 <li>
@@ -181,12 +181,13 @@
                     </div>
 
                     <div class="row">
+
                         <div class="test_div">
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="stat-widget-one">
                                         <div class="stat-content dib">
-
+                                            <h2 style="color: #002752;"><b>Optimizing enzyme ratios in the tagatose synthesis pathway</b></h2>
                                             <h3 style="color: #002752;"><b>Introduction</b></h3>
                                             <p>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;According to the design, we introduced a reaction pathway into the peroxisome of the Yarrowia lipolytica to produce borneol. It is a multi-step reaction from acetyl coenzyme A to GPP, the precursor of borneol. The relative amount of enzymes, i.e., enzyme ratio, plays a critical role in driving the overall reaction. In order to maximize the yield of borneol to provide adequate raw material for the drug, here we build a kinetic model combining five reactions from acetyl coenzyme A to mevalonate diphosphate to predict the optimal enzyme ratio for the reactions.
@@ -411,6 +412,7 @@
                                         <div class="stat-widget-one">
                                             <div class="stat-content dib">
                                                 <div class="stat-text">
+                                                    <h2 style="color: #002752;"><b>Optimizing enzyme ratios in the tagatose synthesis pathway</b></h2>
                                                 <h3 style="color: #002752;"><b>enzyme ratio optimization</b></h3>
                                                 </br>
                                                 
@@ -428,37 +430,37 @@
                                                         </br><br>
                                                     </div>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We searched for the constants for the first-step reaction and got the following results.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V<sub>max</sub>=8.87mmol/s
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K<sub>m</sub> = 0.51 mM
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What follows are the constants for the Michaelis-Menten equation.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V<sub>max</sub>=225±13(nkat*mg<sup>-1</sup>)
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K<sub>m</sub> = 25 ±4(mM)
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So, if the estimate v=V<sub>max</sub> valid, the concentration of galactose is required to be over 100 K<sub>m</sub>(2.5mol·L<sup>-1</sup>) when v=0.99V<sub>max</sub>. 
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, it is a concentration impossible to reach in vivo.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, we did not find constants for RIGDH measured in an environment similar to the in vivo one, which is explained by the instability of NADH in lower pH.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And the K<sub>m</sub> is 8.8 mM, K<sub>cat</sub> is 13.5 U under pH 9.0 and 37℃
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to the figure "Effect of pH on the activity of RIGDH", the activity of RIGDH is reduced to about 20%, consequently, we estimate K<sub>cat</sub> to be 13.5 * 20% U under pH 6.5-7.0.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We employed an optimization algorithm that contains initiation, target function calculation, iteration with mutation, and result evaluation.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For initiation, we chose random distribution to initial the ratio of the enzymes. This initiation is done 50 or more times to create a group of particles, each representing a certain ratio. With this group of particles, we could achieve the effect of Particle Swam Optimization.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then we consider the concentration of tagatose in a pre-determined time as the target value.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We iterate the ratio of enzymes in two ways. First, in a certain possibility, we made all of the particles move toward the best ratio in a recent situation. Otherwise, a random search is made to avoid being stuck to a local optimization.
-                                                    <br><br>
+                                                    <br>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We iterate about 50 times and plot the ratio of every particle as a result. A single particle's ratio change and corresponding target value were also plotted for observation.
-                                                    <br><br>
+                                                    <br>
                                                     <div>
                                                         <center><img
                                                             src="../src/mo-25.png"
